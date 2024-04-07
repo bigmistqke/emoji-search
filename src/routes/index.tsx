@@ -31,7 +31,6 @@ const App = () => {
               spellcheck={false}
             />
           </form>
-
           <Suspense fallback={<LoadingIndicator />}>
             <div class="emoji-container">
               <For each={closestEmojis()}>{emoji => <span innerText={emoji.emoji} />}</For>
@@ -41,7 +40,9 @@ const App = () => {
       </main>
       <footer>
         <h1>Search emojis with USE embeddings.</h1>
-        <a>link</a>
+        <a href="https://github.com/bigmistqke/emoji-search" target="_blank">
+          link
+        </a>
       </footer>
     </>
   )
